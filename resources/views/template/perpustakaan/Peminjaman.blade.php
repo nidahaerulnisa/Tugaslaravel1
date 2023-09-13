@@ -3,7 +3,7 @@
 @section('content')
 <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Form Input Data Anggota</h3>
+                <h3 class="card-title">Form Input Data Peminjaman</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -11,11 +11,11 @@
                 @csrf
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Kode Anggota</label>
-                    <input type="text" class="form-control" name="kode_anggota" placeholder="Input Kode Anggota">
-                    <label for="exampleInputEmail1">Nama Anggota</label>
-                    <input type="text" class="form-control" name="nama_anggota" placeholder="Input Nama Anggota">
-                        <label>Jenis Kelamin</label>
+                    <label for="exampleInputEmail1">Tanggal Pinjam</label>
+                    <input type="date" class="form-control" name="tanggal_pinjam" placeholder="Input Tanggal Pinjam;">
+                    <label for="exampleInputEmail1">Tanggal Kembali</label>
+                    <input type="date" class="form-control" name="tanggal_kembali" placeholder="Input Tanggal Kembali">
+                        <!-- <label>Jenis Kelamin</label>
                         <select type="text" name="jk_anggota" class="form-control">
                           <option></option>
                           <option value="L">Laki-Laki</option>
@@ -27,12 +27,14 @@
                     <input type="number" class="form-control" name="no_telp_anggota" placeholder="Input No Telp Anggota">
                     <label for="exampleInputEmail1">Alamat Anggota</label>
                     <input type="text" class="form-control" name="alamat_anggota" placeholder="Input Alamat Anggota">
-                  </div>
+                  </div> -->
                 <!-- /.card-body -->
+</div>
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                   <button type="submit" class="btn btn-primary">Reset</button>
                 </div>
               </form>
             </div>
+</div>
 @endsection
